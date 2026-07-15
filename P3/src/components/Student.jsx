@@ -3,8 +3,8 @@ function Student() {
     <div>
       <h1 style={{ color: "white" }}>Student Details</h1>
       <hr />
-      <p>Name: Lavkush</p>
-      <p>Roll No: 48</p>
+      <p>Name: Omkar</p>
+      <p>Roll No: 45</p>
       <p>Department: IT</p>
       <p>Semester: V</p>
       <button>VIEW RESULT</button>
