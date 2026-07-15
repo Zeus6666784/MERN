@@ -1,14 +1,16 @@
-function App() {
-  const now = new Date();
+import "./App.css";
 
+function App(){
   return (
-    <div>
-      <h2>Current Date and Time</h2>
-      <p>Date: {now.toLocaleDateString()}</p>
-      <p>Time: {now.toLocaleTimeString()}</p>
-      <p>Khushboo T042</p>
+    <div className="container">
+      <h1>Student Dashboard</h1>
+      <hr />
+      <p>Name : Bhavesh Salaskar</p>
+      <p>Roll no :39</p>
+      <p>course: BSCIT</p>
+      <p>Semester: V</p>
+      <button>view Result</button>
     </div>
   );
 }
-
 export default App;
