@@ -1,16 +1,62 @@
-# React + Vite
+# MERN Project - College Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This is a simple React-based College Management System built as part of the MERN stack learning journey. The application displays student information, attendance records, academic results, and includes a header and footer for the college.
 
-Currently, two official plugins are available:
+## Features
+- **Student Information**: Displays student details (name, roll number, department, semester)
+- **Attendance Tracking**: Shows attendance percentage based on attended vs total classes
+- **Academic Results
+- **Academic Results**: Displays marks in subjects, total percentage, and grade
+- **College Header/Footer**: Consistent branding for the college management system
+- **Responsive Design**: Glass-morphism UI with smooth hover effects
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Components
+1. **Header** - College name and branding
+2. **Student** - Student profile information
+3. **Attendance** - Attendance statistics (total classes, attended, percentage)
+4. **Result** - Academic performance (marks, percentage, grade)
+5. **Footer** - Copyright information
 
-## React Compiler
+## Technology Stack
+- **Frontend**: React.js
+- **Styling**: CSS with glass-morphism effects
+- **Build Tool**: Vite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Installation
+1. Clone the repository
+2. Navigate to the project directory
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-## Expanding the ESLint configuration
+## Project Structure
+```
+src/
+├── components/
+│   ├── Header.jsx
+│   ├── Footer.jsx
+│   ├── Student.jsx
+│   ├── Result.jsx
+│   └── Attendance.jsx
+├── App.jsx
+├ App.css
+├── main.jsx
+└── index.css
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Customization
+- Modify component files in `src/components/` to change displayed information
+- Update `App.css` to modify styling
+- Change data values in the respective component files to reflect different student information
+
+## License
+This project is for educational purposes.
+
+## Author
+Lavkush Vishwakarma
