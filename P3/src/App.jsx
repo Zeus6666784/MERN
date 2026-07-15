@@ -1,16 +1,15 @@
 import "./App.css";
+import Student from "./components/Student";
 
-function App(){
+function App() {
   return (
+    <div className="container1">
+      <h1 style={{ color: "white" }}>This is Function component</h1>
     <div className="container">
-      <h1>Student Dashboard</h1>
-      <hr />
-      <p>Name : Lavkush Vishwakarma</p>
-      <p>Roll no :48</p>
-      <p>course: BSCIT</p>
-      <p>Semester: V</p>
-      <button>Result Dekho</button>
+      <Student />
+    </div>
     </div>
   );
 }
+
 export default App;
