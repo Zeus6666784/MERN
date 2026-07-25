@@ -3,11 +3,11 @@ import React from 'react';
 const Student = () => {
   // Student data
   const studentData = {
-    name: 'Rahul Patil',
-    rollNo: '21',
+    name: 'Lavkush Vishwakarma',
+    rollNo: '48',
     branch: 'Information Technology',
     semester: 'VI',
-    cgpa: '8.65'
+    cgpa: '9.99'
   };
 
   return (

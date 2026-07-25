@@ -1,0 +1,108 @@
+/* App.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #eef4ff, #d9e7ff);
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    padding: 30px;
+}
+
+/* Main Heading */
+h1 {
+    text-align: center;
+    color: #0d47a1;
+    font-size: 34px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Section Box */
+.section {
+    background: #f8fbff;
+    border-left: 6px solid #1976d2;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    transition: 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Section Heading */
+h2 {
+    color: #2e7d32;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 18px;
+    color: #444;
+    padding: 8px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+p:last-child {
+    border-bottom: none;
+}
+
+hr {
+    margin: 25px 0;
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #1976d2, transparent);
+}
+
+/* Footer */
+footer {
+    margin-top: 25px;
+    text-align: center;
+    color: #555;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px;
+    background: #f1f5ff;
+    border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
