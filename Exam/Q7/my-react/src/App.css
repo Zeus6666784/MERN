@@ -1,0 +1,25 @@
+
+.container {
+  text-align: center;
+  background-color: lightblue;
+  padding: 30px;
+  margin: 50px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: darkblue;
+}
+
+p {
+  color: black;
+  font-size: 18px;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}

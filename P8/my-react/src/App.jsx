@@ -35,7 +35,7 @@ function App() {
 
     const getStudents = () => {
         axios
-            .get("http://localhost:3000/students")
+            .get("http://localhost:3000/Students")
             .then((response) => {
                 setStudents(response.data);
             })
@@ -57,7 +57,7 @@ function App() {
         };
 
         axios
-            .post("http://localhost:3000/students", newStudent)
+            .post("http://localhost:3000/Students", newStudent)
             .then((response) => {
                 alert(response.data.message);
                 setRollNo("");
