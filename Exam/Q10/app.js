@@ -1,20 +1,6 @@
 const express = require('express');
 const app = express();
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
-
-app.listen(3000, () => {
-  console.log('Server running on port 3000');
-});
-
-```for rest API using express use the below code
-
-
-const express = require('express');
-const app = express();
-
 app.use(express.json());
 
 app.get('/users', (req, res) => {
@@ -34,6 +20,3 @@ app.post('/users', (req, res) => {
 app.listen(3000, () => {
   console.log('Server running on port 3000');
 });
-
-
-```
