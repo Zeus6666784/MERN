@@ -12,3 +12,4 @@
 15. Pass data between components using props
 16. Create api to add user details using express and mongo db
 17. Use useState hook to manage and update data
+18. Design a react form to send a user's data to the backend
