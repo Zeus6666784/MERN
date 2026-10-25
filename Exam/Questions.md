@@ -23,6 +23,6 @@
 23. Demonstrate use of arrow functions.
 24. Store data in mongodb 
 25. Javascript program to print the multiplication table of a given number using loop and template literals.
-26. 
-27. 
-28. 
+26. Create a react component to calculate the square and Cube of number
+27. Create a react application to implement navigation between different pages using link and route components.
+28. Javascript program to perform map filter reduce using array methods.
