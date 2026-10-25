@@ -39,21 +39,24 @@ app.get("/students", async (req, res) => {
 });
 
 // POST API - Add Student
-app.post('/add', async (req, res) => {
+app.post("/add", async (req, res) => {
     try {
-        const { name, course, marks } = req.body;
+        const student = {
+            name: "Zeus",
+            course: "Bsc IT",
+            marks: 99
+        };
 
         await mongoose.connection.db
-            .collection('students')
-            .insertOne({
-                name,
-                course,
-                marks: Number(marks)
-            });
+            .collection("students")
+            .insertOne(student);
 
         res.json("Data added successfully");
     } catch (error) {
-        res.status(500).json({ message: error.message });
+        res.status(500).json({
+            message: "Data not added",
+            error: error.message
+        });
     }
 });
 
