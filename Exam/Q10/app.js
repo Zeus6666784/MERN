@@ -1,22 +1,40 @@
-const express = require('express');
-const app = express();
+const express = require("express"); 
+const mongoose = require("mongoose"); 
+const cors = require("cors"); 
+const app = express(); 
+const PORT = 3000; 
 
-app.use(express.json());
+app.use(cors()); 
+app.use(express.json()); 
+mongoose.connect("mongodb://127.0.0.1:27017/CollegeDB") 
+    .then(() => { 
+        console.log("MongoDB Connected Successfully"); 
+    }) 
+    .catch((error) => { 
+        console.log("MongoDB Connection Failed"); 
+        console.log(error); 
+    }); 
 
-app.get('/users', (req, res) => {
-  res.json([
-    { id: 1, name: 'Lavkush' },
-    { id: 2, name: 'Rahul' }
-  ]);
-});
+// Home Route 
+app.get("/", (req, res) => { 
+    res.send("Student Management API is Running"); 
+}); 
 
-app.post('/users', (req, res) => {
-  res.json({
-    message: 'User created successfully',
-    user: req.body
-  });
-});
+// GET API - Retrieve Students 
+app.get("/students", async (req, res) => { 
+    try { 
+        const students = await mongoose.connection.db 
+            .collection("students") 
+            .find() 
+            .toArray(); 
+        res.json(students); 
+    } catch (error) { 
+        res.status(500).json({ 
+            message: "Error fetching students" 
+        }); 
+    } 
+}); 
 
-app.listen(3000, () => {
-  console.log('Server running on port 3000');
+app.listen(PORT, () => { 
+    console.log(`Server is running on http://localhost:${PORT}`); 
 });
