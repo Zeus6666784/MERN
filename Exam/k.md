@@ -8,3 +8,4 @@
 11. Display the current date and time dynamically in React.
 12. Create a GET API using Express.js.
 13. Create multiple components and render them on single page.
+14. Fetch data from the api in a react application
